@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Rama Innovation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Rama<span>Solutions</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html" class="active">Services</a>
+                <a href="news.html">News</a>
+                <a href="join.html">Join</a>
+                <a href="#contact" class="cta-button">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html" class="active">Services</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Services Hero Section -->
+    <section class="page-hero services-hero">
+        <div class="container">
+            <h1 class="animate-slide-up">Our <span>Services</span></h1>
+            <p class="animate-slide-up delay-1">Comprehensive technology solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2>Technology <span>Solutions</span></h2>
+                <p>We deliver innovative services that drive digital transformation and business growth</p>
+            </div>
+            
+            <div class="services-tabs animate-slide-up delay-1">
+                <button class="service-tab active" data-tab="development">Development</button>
+                <button class="service-tab" data-tab="cloud">Cloud</button>
+                <button class="service-tab" data-tab="data">Data</button>
+                <button class="service-tab" data-tab="consulting">Consulting</button>
+            </div>
+            
+            <div class="service-category active" id="development">
+                <div class="service-details">
+                    <div class="service-detail-card animate-slide-up delay-2">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications built with modern frameworks like React, Angular, and Vue.js.</p>
+                        <ul class="service-features">
+                            <li>Responsive design for all devices</li>
+                            <li>SEO-optimized architecture</li>
+                            <li>E-commerce integration</li>
+                            <li>CMS development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card animate-slide-up delay-3">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile App Development</h3>
+                        <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
+                        <ul class="service-features">
+                            <li>React Native development</li>
+                            <li>Flutter applications</li>
+                            <li>Native iOS (Swift) and Android (Kotlin)</li>
+                            <li>App store optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card animate-slide-up delay-4">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Custom Software</h3>
+                        <p>Tailored business solutions designed to streamline your operations.</p>
+                        <ul class="service-features">
+                            <li>Enterprise resource planning</li>
+                            <li>Customer relationship management</li>
+                            <li>Inventory management systems</li>
+                            <li>Workflow automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-category" id="cloud">
+                <div class="service-details">
+                    <div class="service-detail-card">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>Cloud Migration</h3>
+                        <p>Seamless transition of your infrastructure and applications to the cloud.</p>
+                        <ul class="service-features">
+                            <li>AWS, Azure, and Google Cloud</li>
+                            <li>Legacy system modernization</li>
+                            <li>Cost optimization strategies</li>
+                            <li>Disaster recovery planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Design, deployment, and management of scalable cloud environments.</p>
+                        <ul class="service-features">
+                            <li>Containerization with Docker</li>
+                            <li>Kubernetes orchestration</li>
+                            <li>Serverless architecture</li>
+                            <li>Infrastructure as Code</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cloud Security</h3>
+                        <p>Comprehensive protection for your cloud-based assets and data.</p>
+                        <ul class="service-features">
+                            <li>Identity and access management</li>
+                            <li>Data encryption</li>
+                            <li>Compliance auditing</li>
+                            <li>Threat detection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-category" id="data">
+                <div class="service-details">
+                    <div class="service-detail-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Analytics</h3>
+                        <p>Transform raw data into actionable business intelligence.</p>
+                        <ul class="service-features">
+                            <li>Business intelligence dashboards</li>
+                            <li>Predictive analytics</li>
+                            <li>Data visualization</li>
+                            <li>KPI tracking</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
+                        <p>Implement AI solutions to automate processes and gain insights.</p>
+                        <ul class="service-features">
+                            <li>Custom ML models</li>
+                            <li>Natural language processing</li>
+                            <li>Computer vision</li>
+                            <li>Recommendation engines</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-archive"></i>
+                        <h3>Data Warehousing</h3>
+                        <p>Centralized repositories for your organization's structured data.</p>
+                        <ul class="service-features">
+                            <li>ETL pipeline development</li>
+                            <li>Data lake implementation</li>
+                            <li>Data governance</li>
+                            <li>Big data solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-category" id="consulting">
+                <div class="service-details">
+                    <div class="service-detail-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Digital Strategy</h3>
+                        <p>Roadmap for your organization's digital transformation journey.</p>
+                        <ul class="service-features">
+                            <li>Technology assessment</li>
+                            <li>Digital maturity evaluation</li>
+                            <li>Roadmap development</li>
+                            <li>Implementation planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>IT Consulting</h3>
+                        <p>Expert guidance on technology decisions and implementations.</p>
+                        <ul class="service-features">
+                            <li>Vendor selection</li>
+                            <li>System architecture</li>
+                            <li>Technology stack advice</li>
+                            <li>Cost-benefit analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-detail-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Security Audit</h3>
+                        <p>Comprehensive evaluation of your organization's cybersecurity posture.</p>
+                        <ul class="service-features">
+                            <li>Vulnerability assessment</li>
+                            <li>Penetration testing</li>
+                            <li>Compliance checking</li>
+                            <li>Remediation planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="work-process">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2>Our <span>Process</span></h2>
+                <p>A structured approach to delivering exceptional results</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step animate-slide-up delay-1">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We begin by thoroughly understanding your business needs, challenges, and objectives.</p>
+                </div>
+                
+                <div class="process-step animate-slide-up delay-2">
+                    <div class="step-number">2</div>
+                    <h3>Planning</h3>
+                    <p>Our team creates a detailed project plan with milestones, deliverables, and timelines.</p>
+                </div>
+                
+                <div class="process-step animate-slide-up delay-3">
+                    <div class="step-number">3</div>
+                    <h3>Development</h3>
+                    <p>We build your solution using agile methodologies with regular progress updates.</p>
+                </div>
+                
+                <div class="process-step animate-slide-up delay-4">
+                    <div class="step-number">4</div>
+                    <h3>Testing</h3>
+                    <p>Rigorous quality assurance ensures your solution meets all requirements.</p>
+                </div>
+                
+                <div class="process-step animate-slide-up delay-5">
+                    <div class="step-number">5</div>
+                    <h3>Deployment</h3>
+                    <p>We implement the solution and provide training for your team.</p>
+                </div>
+                
+                <div class="process-step animate-slide-up delay-6">
+                    <div class="step-number">6</div>
+                    <h3>Support</h3>
+                    <p>Ongoing maintenance and support to ensure continued success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Consultation Form -->
+    <section class="consultation-form">
+        <div class="container">
+            <div class="form-container animate-slide-up">
+                <div class="form-content">
+                    <h2>Ready to Discuss Your Project?</h2>
+                    <p>Get in touch with our experts for a free consultation</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 94600 00088</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@Rama Innovation.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM - 6PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="consultation-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">I'm interested in...</option>
+                            <option>Web Development</option>
+                            <option>Mobile App Development</option>
+                            <option>Cloud Solutions</option>
+                            <option>Data Analytics</option>
+                            <option>Consulting Services</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Request Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Rama Innovation</h3>
+                    <p>Innovative solutions for your digital transformation journey.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/rama-innovation/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" id="contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 94-A Ganesh Marg, Surya Nagar, Gopalpura Road, Jaipur, Rajasthan, India (302015)</li>
+                        <li><i class="fas fa-phone"></i> +91 94600 00088</li>
+                        <li><i class="fas fa-envelope"></i> info@Rama Innovation.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rama Innovation. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+    <script>
+        // Service tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceTabs = document.querySelectorAll('.service-tab');
+            const serviceCategories = document.querySelectorAll('.service-category');
+            
+            serviceTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    serviceTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding category
+                    const tabId = this.dataset.tab;
+                    serviceCategories.forEach(cat => {
+                        cat.classList.remove('active');
+                        if (cat.id === tabId) {
+                            cat.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Consultation form submission
+            const consultationForm = document.querySelector('.consultation-form form');
+            if (consultationForm) {
+                consultationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your request! Our team will contact you within 24 hours.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
