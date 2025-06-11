@@ -105,3 +105,101 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterForm = document.getElementById('newsletterForm');
+    const formMessage = document.getElementById('formMessage');
+    
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const emailInput = this.querySelector('input[type="email"]');
+            const email = emailInput.value.trim();
+            
+            // Simple validation
+            if (!email || !isValidEmail(email)) {
+                showMessage('Please enter a valid email address', 'error');
+                return;
+            }
+            
+            try {
+                // Here you would typically send the data to your server
+                // This is a mock implementation
+                const response = await mockApiCall(email);
+                
+                if (response.success) {
+                    showMessage('Thank you for subscribing!', 'success');
+                    newsletterForm.reset();
+                } else {
+                    showMessage('Subscription failed. Please try again.', 'error');
+                }
+            } catch (error) {
+                console.error('Subscription error:', error);
+                showMessage('An error occurred. Please try again later.', 'error');
+            }
+        });
+    }
+    
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+    
+    function showMessage(text, type) {
+        formMessage.textContent = text;
+        formMessage.className = 'form-message ' + type;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            formMessage.style.opacity = '0';
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+                formMessage.style.opacity = '1';
+            }, 300);
+        }, 5000);
+    }
+    
+    // Mock API call function - replace with real API call
+    function mockApiCall(email) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                // Simulate random success/failure for demo
+                const success = Math.random() > 0.2; // 80% success rate
+                resolve({ success });
+            }, 800);
+        });
+    }
+});
+
+// Add this to your script.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Button ripple effect
+    const buttons = document.querySelectorAll('.cta-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Remove any existing ripples
+            const existingRipples = this.querySelectorAll('.ripple');
+            existingRipples.forEach(ripple => ripple.remove());
+            
+            // Create ripple
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            
+            // Position ripple
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = `${size}px`;
+            ripple.style.left = `${e.clientX - rect.left - size/2}px`;
+            ripple.style.top = `${e.clientY - rect.top - size/2}px`;
+            
+            this.appendChild(ripple);
+            
+            // Remove ripple after animation
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+});
