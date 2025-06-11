@@ -35,8 +35,7 @@
 </head>
 
 <body>
-
-    <!-- The Modal -->
+        <!-- The Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -45,6 +44,8 @@
             <p>We deliver cutting-edge technology services to help your business grow in the digital age.</p>
         </div>
     </div>
+
+  
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -72,7 +73,7 @@
         <a href="about.html">About</a>
         <a href="service.html">Services</a>
         <a href="news.html">News</a>
-        <a href="join.html">Join Us</a>
+        <a href="join.html">Join</a>
         <a href="#contact">Contact</a>
     </div>
 
@@ -104,28 +105,28 @@
                     <i class="fas fa-code"></i>
                     <h3>Web Development</h3>
                     <p>Custom websites and web applications built with the latest technologies for optimal performance.</p>
-                    <a href="#" class="read-more">Learn More</i></a>
+                   
                 </div>
                 
                 <div class="service-card animate-slide-up delay-3">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Mobile Apps</h3>
                     <p>iOS and Android applications designed to engage your customers and grow your business.</p>
-                    <a href="#" class="read-more">Learn More</a>
+                   
                 </div>
                 
                 <div class="service-card animate-slide-up delay-4">
                     <i class="fas fa-cloud"></i>
                     <h3>Cloud Solutions</h3>
                     <p>Scalable cloud infrastructure and services to power your business operations.</p>
-                    <a href="#" class="read-more">Learn More</a>
+                    
                 </div>
                 
                 <div class="service-card animate-slide-up delay-5">
                     <i class="fas fa-chart-line"></i>
                     <h3>Data Analytics</h3>
                     <p>Turn your data into actionable insights with our powerful analytics solutions.</p>
-                    <a href="#" class="read-more">Learn More</a>
+                  
                 </div>
             </div>
         </div>
@@ -161,18 +162,19 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content animate-slide-up">
-                <h2>Subscribe to Our Newsletter</h2>
-                <p>Stay updated with our latest news and offers</p>
-            </div>
-            <form class="newsletter-form animate-slide-up delay-1">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="cta-button">Subscribe</button>
-            </form>
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content animate-slide-up">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest news and offers</p>
         </div>
-    </section>
+        <form class="newsletter-form animate-slide-up delay-1" id="newsletterForm">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+        <div class="form-message" id="formMessage"></div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">

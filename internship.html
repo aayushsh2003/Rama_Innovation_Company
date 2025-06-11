@@ -25,6 +25,7 @@
     
     <!-- Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -33,52 +34,7 @@
     <link rel="manifest" href="/site.webmanifest">
     
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background-color: #f8f9fc;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #002147, #0056b3);
-      color: #fff;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ffd700;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-
-    .hero h2 span {
-      color: #ff7300;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
 
     .why-join {
       background: #fff;
@@ -105,20 +61,6 @@
     .why-join i {
       color: green;
       margin-right: 10px;
-    }
-
-    .cta-button {
-      background-color: #ff7300;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .cta-button:hover {
-      background-color: #e66000;
     }
 
     .details {
@@ -184,24 +126,37 @@
       list-style: disc;
     }
 
-    footer {
-      background: #002147;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    footer p {
-      margin-bottom: 0.5rem;
-    }
-
-    footer a {
-      color: #ffd700;
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
+     <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Rama<span>Innovation</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="news.html">News</a>
+                <a href="join.html">Join</a>
+                <a href="#contact" class="cta-button">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join</a>
+        <a href="#contact">Contact</a>
+    </div>
   <section class="hero">
     <div class="container">
       <h1>Rama Innovation Pvt. Ltd</h1>
@@ -281,12 +236,60 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p><strong>Address:</strong> 94 A Ganesh Marg, Surya Nagar, Gopalpura Road, Jaipur, Rajasthan (302015) India</p>
-      <p><i class="fas fa-envelope"></i> info@ramainnovation.in &nbsp;&nbsp; <i class="fas fa-phone"></i> +91 9462666899 , +91 9462888966</p>
-      <a href="https://www.ramainnovation.in" target="_blank">www.ramainnovation.in</a>
-    </div>
-  </footer>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Rama Innovation</h3>
+                    <p>Innovative solutions for your digital transformation journey.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/rama-innovation/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" id="contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 94-A Ganesh Marg, Surya Nagar, Gopalpura Road, Jaipur, Rajasthan, India (302015) </li>
+                        <li><i class="fas fa-phone"></i> +91 9462666899 , +91 9462888966</li>
+                        <li><i class="fas fa-envelope"></i> info@ramainnovation.in</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rama Innovation. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
